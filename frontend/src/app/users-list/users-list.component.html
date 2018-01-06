@@ -1,0 +1,32 @@
+<md-card class="example-card">
+    <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Users List</md-card-title>
+        <md-card-subtitle>User information</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+        <table>
+            <thead id="tblHead">
+                <tr>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody id="tblBody">
+                <tr *ngFor="let user of users">
+                    <td><button name="E-{{user._id}}" [routerLink]="['/editUser/', user._id]" class="btnEdit" md-button><md-icon>edit</md-icon></button></td>
+                    <td><button name="D-{{user._id}}" class="btnDelete" md-button (click)="openDialog(user._id)"><md-icon>delete</md-icon></button></td>
+                    <td class="col colName">{{user.name}}</td>
+                    <td class="col colEmail">{{user.email}}</td>
+                    <td class="col colUsername">{{user.username}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </md-card-content>
+    <md-card-actions id="actionContent">
+        <button md-raised-button color="primary" (click)="openDialog('1')">Find User</button>
+    </md-card-actions>
+</md-card>

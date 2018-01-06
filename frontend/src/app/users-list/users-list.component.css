@@ -1,0 +1,48 @@
+.example-card {
+    margin: 25px auto;
+    text-align: center;
+    width: 600px;
+}
+
+#actionContent {
+    text-align: right;
+}
+
+.example-header-image {
+    background-image: url('../../assets/img/users.png');
+    background-size: cover;
+}
+
+#tblHead {
+    background-color: greenyellow;
+    padding: 10px 0px 10px 0px;
+}
+
+#tblBody {
+    background-color: lightcyan;
+    text-align: left;
+}
+
+.col {
+    padding-left: 10px;
+}
+
+.colName {
+    width: 200px;
+}
+
+.colEmail {
+    width: 350px;
+}
+
+.colUsername {
+    width: 200px;
+}
+
+.btnDelete {
+    color: red;
+}
+
+.btnEdit {
+    color: blue;
+}

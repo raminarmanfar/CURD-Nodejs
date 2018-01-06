@@ -1,0 +1,30 @@
+<md-card class="example-card">
+    <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Add new user</md-card-title>
+        <md-card-subtitle>Enter user information</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+        <form>
+            <md-input-container>
+                <!-- [ngModelOptions]="{standalone: true}" -->
+                <input mdInput placeholder="Name" [(ngModel)]="newUser.name" name="name">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput type="email" placeholder="Email " [(ngModel)]="newUser.email" name="email">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput placeholder="Username" [(ngModel)]="newUser.username" name="username">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput type="password" [(ngModel)]="newUser.password" name="password">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput type="password" [(ngModel)]="confirmation" name="confirmation">
+            </md-input-container>
+        </form>
+    </md-card-content>
+    <md-card-actions id="actionContent">
+        <button md-raised-button color="primary" (click)="onClick()">Add user</button>
+    </md-card-actions>
+</md-card>

@@ -1,0 +1,14 @@
+.example-card {
+    margin: 25px auto;
+    text-align: left;
+    width: 250px;
+}
+
+.example-header-image {
+    background-image: url('../../assets/img/adduser.png');
+    background-size: cover;
+}
+
+#actionContent {
+    text-align: right;
+}
